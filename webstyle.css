@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+:root{
+    --main-color: #f25341;
+    --text-color: #35404e;
+    --bg-color: #f9f9ff;
+    --big-font: 3.6rem;
+    --h2-font: 2.26rem;
+    --p-font: 1.1rem;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 320px;
+    z-index: 111;
+    background: var(--bg-color);
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.logo{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
+.logo:hover{
+    color: rgb(148, 148, 250);
+}
+
+.navlist{
+    display: flex;
+    list-style: none;
+}
+
+.navlist a{
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 750;
+    padding: 15px 20px;
+    transition: color .4s;
+}
+
+.navlist a:hover{
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    padding: 75px 16.7%;
+}
+
+/* home section css */
+
+.home{
+    width: 100%;
+    min-height: 95vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5rem;
+    align-items: center;
+}
+
+.home-img img{
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+}
+
+.home-text h5{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: var(--main-color);
+}
+
+.home-text h1{
+    font-size: var(--big-font);
+    color: var(--text-color);
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.home-text p {
+    max-width: 100%;
+    width: 430px;
+    font-size: var(--p-font);
+    color: #717173;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background: var(--main-color);
+    border-radius: 5rem;
+    transition: .4s;
+}
+
+.btn i{
+    margin-right: 10px;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+    background: #f37465;
+    box-shadow: 0 5px 15px 2px rgb(63, 44, 44 / 18%);
+}
+
+/* about section css */
+
+.about{
+    /* width: 1130px;
+    max-width: 95%; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.about-img img{
+    /* max-width: 100%; */
+    width: 700px;
+    height: auto;
+}
+
+span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.about-text h3{
+    color: var(--main-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.about-text h2{
+    font-size: var(--h2-font);
+    color: var(--text-color);
+    margin-bottom: 15px;
+    
+}
+
+.about-text p{
+    color: #717173;
+    font-size: var(--p-font);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* education section css */
+
+.heading{
+    text-align: center;
+}
+
+.heading h2{
+    font-size: var(--h2-font);
+    color: var(--main-color);
+}
+
+.heading h3{
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+.education{
+    padding-top: 100px;
+}
+
+.education-card{
+    flex-basis: 31%;
+    background: #ffd8d8;
+    border-radius: 10px;
+    margin: 3%;
+    padding: 20px 12px;
+    /* box-sizing: border-box; */
+    transition: 0.5s;
+
+    /* margin: 0 auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* box-shadow: 0 0 20px 0px rgba(0,0,0,0.2); */
+}
+
+.education-card:hover{
+    box-shadow: 0 0 15px 0px rgba(0,0,0,0.2);
+    /* transform: scale(1.05); */
+}
+
+.education-text{
+    /* letter-spacing: 1px; */
+    line-height: 30px;
+    /* font-size: 18px; */
+    /* margin-bottom: 45px; */
+    /* padding-left: 5%; */
+    padding-right: 10%;
+}
+
+.education-text h2{
+    color: var(--main-color);
+}
+
+.education-text ul{
+    padding-left: 3rem;
+}
+
+.education-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.row{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 1%; */
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.col{
+    text-align: center;
+    line-height: 30px;
+    /* flex-basis: 32%; */
+    border-radius: 10px;
+    background: var(--bg-color);
+    padding: 1%;
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.2);
+    transition: 0.5s;
+
+    margin-bottom: 5%;
+}
+
+.col:hover{
+    transform: scale(1.05);
+}
+
+.col img{
+    width: 100px;
+    height: 100px;
+}
+
+/* Project section CSS */
+
+.projects{
+    padding-top: 100px;
+}
+
+.project-card{
+    /* flex-basis: 31%; */
+    background: #ffd8d8;
+    border-radius: 10px;
+    margin: 3%;
+    padding: 20px 12px;
+    /* box-sizing: border-box; */
+    transition: 0.5s;
+
+    /* margin: 0 auto; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-between;
+}
+
+.project-text{
+    /* letter-spacing: 1px; */
+    line-height: 30px;
+    /* font-size: 18px; */
+    /* margin-bottom: 45px; */
+    padding-left: 5%;
+    /* padding-right: 10%; */
+}
+
+.project-text h2{
+    color: var(--main-color);
+    padding-bottom: 1rem;
+}
+
+.project-text p{
+    padding-left: 1rem;
+}
+
+.project-text ul{
+    display: flex;
+    list-style: none;
+}
+
+.project-text ul li{
+    color: var(--main-color);
+    font-size: 1rem;
+    font-weight: 750;
+    padding: 15px;
+    transition: color .4s;
+
+}
+
+.github{
+    padding: 3%;
+}
+
+/* footer css */
+
+footer{
+    text-align: center;
+    /* align-items: center;
+    justify-content: center; */
+    padding-bottom: 3%;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 1%;
+}
+
+.footer h2{
+    color: var(--main-color);
+
+}
+
+.footer ul{
+    /* display: flex; */
+    list-style: none;
+    /* justify-content: space-evenly; */
+    /* padding-left: 30%;
+    padding-right: 30%; */
+    padding-bottom: 2%;
+    padding-top: 10%;
+    
+
+}
+
+.footer ul li{
+    padding: 2%;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: var(--p-font);
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.footer ul li a:hover{
+    color: var(--main-color);
+}
+
+/* 404 css */
+
+.four{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.four img{
+    width: 500px;
+    height: auto;
+}
+
+.four-text{
+    text-align: center;
+    margin: 1%;
+}
+
+.four-text h1{
+    font-size: var(--big-font);
+    color: var(--main-color);
+}
+
+.four-text h1, .four-text h2, .four-text h3, .four-text h4{
+    margin: 3%;
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 1500px) {
+    header{
+        padding: 15px 42px;
+    }
+    :root{
+        --big-font: 3rem;
+        --h2-font: 2rem;
+    }
+
+    .about-img{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1300px){
+    .col{
+        /* display: flex; */
+        justify-content: space-around;
+        /* text-align: center; */
+        box-shadow: none;
+    }
+
+    .col img{
+        width: fit-content;
+        height: auto;
+        max-width: 50%;
+    }
+
+
+    .row{
+        display: contents;
+    }
+
+    .project-card{
+        display:block;
+    }
+}
+
+@media (max-width: 1200px){
+    .project-text ul{
+        display:none;
+    }
+}
+
+@media (max-width: 900px){
+    .education-card img{
+        display: none;
+    }
+
+    p, h1,h2,h3,h4, .github{
+        text-align: center;
+        align-items: center;
+    }
+
+    .home{
+        display: flex;
+    }
+
+    .home-img{
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer{
+        display: contents;
+    }
+
+    .footer ul {
+        margin: 1%;
+        padding-top: 5%;
+    }
+
+    #menu-icon{
+        display: block;
+    }
+    header .navlist{
+        position: absolute;
+        top: -400px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: white;
+        transition: .4s;
+    }
+
+    header.navlist .active{
+        top: 86px;
+    }
+
+    .navlist a{
+        display: block;
+        padding: 1.6rem;
+    }
+}
